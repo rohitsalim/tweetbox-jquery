@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://fb.me/react-0.13.3.js"></script>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div class="well clearfix">
+    <textarea class="form-control"></textarea></br>
+    <button class="btn btn-primary pull-right">Hello</button>
+  </div>
+<script id="jsbin-javascript">
+// Initially diable the button
+
+$("button").prop("disabled", true);
+
+// When there is atleast one character, enable the tweet button. 
+
+$("textarea").on("input", function() {
+  // If there's at least one character...
+  if($(this).val().length > 0) {
+    $("button").prop("disabled", false);
+  }  else {
+    $("button").prop("disabled", true);
+  }  
+});
+</script>
+
+<script id="jsbin-source-html" type="text/html"><!DOCTYPE html>
+<html>
+<head>
+<script src="//fb.me/react-0.13.3.js"><\/script>
+<script src="https://code.jquery.com/jquery.min.js"><\/script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"><\/script>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div class="well clearfix">
+    <textarea class="form-control"></textarea></br>
+    <button class="btn btn-primary pull-right">Hello</button>
+  </div>
+</body>
+</html></script>
+
+
+<script id="jsbin-source-javascript" type="text/javascript">// Initially diable the button
+
+$("button").prop("disabled", true);
+
+// When there is atleast one character, enable the tweet button. 
+
+$("textarea").on("input", function() {
+  // If there's at least one character...
+  if($(this).val().length > 0) {
+    $("button").prop("disabled", false);
+  }  else {
+    $("button").prop("disabled", true);
+  }  
+});
+
+
+</script></body>
+</html>
